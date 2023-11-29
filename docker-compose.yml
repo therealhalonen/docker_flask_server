@@ -1,0 +1,14 @@
+version: '3'
+services:
+  flask-app:
+    build: .
+    container_name: test-flask-container
+    image: test-flask-app:latest
+    ports:
+      - "9991:5000"
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: "256M"
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Page</title>
+</head>
+<body>
+
+<div id="helloWorldContainer"></div>
+
+<script>
+    function printHelloWorld() {
+        var container = document.getElementById('helloWorldContainer');
+        container.innerHTML += "Hello Worl!<br>";
+        setTimeout(printHelloWorld, 500);
+    }
+
+    // Start printing Hello World
+    printHelloWorld();
+</script>
+
+</body>
+</html>
+
